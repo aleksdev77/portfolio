@@ -1,0 +1,44 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
+    &__whatsapp {
+        transform: rotate(deg);
+    }
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: white;
+    }
+    &__text {
+        height: 120px;
+        width: 25px;
+        color: white;
+        span {
+            display: block;
+            transform: rotate(-90deg) translate(-30%, -260%);
+            width: 150px;
+        }
+    }
+
+}
+
+.white {
+    fill: white;
+}
+.black {
+    fill: black;
+}

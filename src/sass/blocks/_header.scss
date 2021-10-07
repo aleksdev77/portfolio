@@ -1,0 +1,32 @@
+.header {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg2.jpg') no-repeat 50%/cover;
+    &__wrapper {
+        padding-top: 205px;
+    }
+    &__text {
+        position: relative;
+        padding-left: 10px;
+        font-size: 19px;
+        color: #ffff;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__title {
+        margin-top: 10px;
+        font-size: 40px;
+        color: #ffff;
+    }
+    &__btns {
+        margin-top: 45px;
+    }
+    &__link {
+        margin-right: 44px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+}
+

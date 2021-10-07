@@ -1,0 +1,35 @@
+.about {
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__photo {
+        display: block;
+        width: 35%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    &__me {
+        margin-left: 70px;
+        padding-top: 9px;
+    }
+
+    &__abovetitle {
+        padding-left: 11px;
+        @include before_circle;
+    }
+
+    &__line {
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+        margin-top: 4px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

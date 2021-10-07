@@ -1,0 +1,72 @@
+.menu
+    position: fixed
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100vh
+    z-index: 15
+    visibility: hidden
+    opacity: 0
+    transition: all 0.6s
+    &.active
+        left: 0
+        visibility: visible
+        opacity: 1
+
+    &__block
+        position: relative
+        width: 345px
+        height: 100%
+        padding-top: 140px
+        padding-left: 40px
+        background-color: black
+        transition: all 0.6s
+        z-index: 18
+
+    &__close
+        position: absolute
+        top: 25px
+        right: 25px
+        transition: all 0.8s
+        cursor: pointer
+        &:hover
+            transition: all 0.6s
+            transform: rotate(180deg)
+
+    &__list
+        list-style-type: none
+        padding-left: 35px
+        z-index: 18
+
+    &__link
+        position: relative
+        font-weight: bold
+        font-size: 23px
+        line-height: 36px
+        margin-bottom: 15px
+        &:before
+            content: ''
+            position: absolute
+            left: -30px
+            top: 6px
+            width: 25px
+            height: 25px
+            transition: all 0.6s
+            background: url('../img/icons/icon-check-blue.png') left no-repeat
+
+        a
+            font-family: 'Roboto'
+            color: #ffff
+
+        a:hover
+            color: #4ce2ff
+
+    &__overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #fff
+        opacity: 0.75
+        z-index: -1

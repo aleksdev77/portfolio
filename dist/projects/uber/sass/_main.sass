@@ -1,0 +1,436 @@
+@import _menu.sass
+@import _modal.sass
+@import _mixin.sass
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+.header
+    position: fixed
+    width: 100vw
+    z-index: 10
+    &__top
+        height: 51px
+        background: rgba(33, 33, 33, 1)
+    &__menu
+        padding-top: 12px
+    &__list
+        display: flex
+        justify-content: center
+        & li
+            list-style-type: none
+            border-right: 1px dotted #ffff
+            padding-right: 30px
+            padding-left: 30px
+            &:nth-child(6)
+                border-right: none
+
+        & a
+            text-decoration: none
+            font-family: 'Roboto'
+            font-size: 15px
+            font-weight: 300
+            color: white
+    &__bottom
+        height: 84px
+        background: rgba(33, 33, 33, 0.7)
+    &__img
+        max-width: 100%
+    &__row
+        display: flex
+    &__uber
+        padding-top: 16px
+    &__logo
+
+    &__text
+        opacity: 0.5
+        padding-top: 6px
+        font-family: 'Roboto'
+        font-size: 13px
+        font-weight: 100
+        text-align: left
+        color: rgba(255, 255, 255, 0.5)
+    &__contact
+        padding-top: 20px
+        padding-left: 20px
+    &__call
+        font-family: 'Roboto'
+        font-size: 12px
+        letter-spacing: 0.3px
+        color: white
+        padding-left: 13px
+    &__phone
+        font-family: 'Roboto'
+        font-size: 22px
+        color: white
+    &__btn
+        margin-top: 18px
+        margin-left: 25px
+        width: 162px
+        height: 46px
+        box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+        border-radius: 5px
+        background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+        font-family: 'Roboto'
+        font-size: 14px
+        text-align: center
+        text-transform: uppercase
+        color: white
+        outline: none
+        border: none
+        &:hover
+            background-image: linear-gradient(to top, #4ce2ff, #1eacc7)
+    &__burger-menu
+        display: none
+.company
+    height: 815px
+    background: url('../img/bg/bg.png') center no-repeat
+    background-size: cover
+    // &__main-bg
+    //     // height: 100vh
+    //     height: 815px
+    //     width: 100vw
+    //     height:
+    //     position: absolute
+    //     z-index: -1
+    //     object-fit: cover
+    &__wraper
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        & h1
+            padding-top: 180px
+            font-family: 'Roboto'
+            font-size: 60px
+            font-weight: bold
+            text-align: center
+            color: white
+
+    &__subtitle
+        & h2
+            font-family: 'Roboto'
+            font-size: 36px
+            font-weight: bold
+            text-align: center
+            color: white
+    &__text
+        font-family: 'Roboto'
+        font-size: 18px
+        text-align: center
+        color: white
+        margin: 23px 150px 0px 150px
+    &__subtext
+        margin-top: 23px
+        font-family: 'Roboto'
+        font-size: 18px
+        text-align: center
+        color: white
+        margin: 23px 150px 0px 150px
+    &__btn
+        margin-top: 118px
+        width: 245px
+        height: 63px
+        box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+        border-radius: 5px
+        background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+        font-family: 'Roboto'
+        font-size: 18px
+        color: white
+        outline: none
+        border: none
+        &:hover
+            background-image: linear-gradient(to top, #4ce2ff, #1eacc7)
+
+.reasons
+    min-height: 950px
+    &__header
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__advantages
+        +text
+    &__title
+        margin-bottom: 40px
+        & h2
+            +title
+
+    &__block
+        display: flex
+        justify-content: center
+        margin-top: 25px
+    &__item
+        margin-right: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 113px
+        height: 113px
+        background-color: #1eacc7
+        border-radius: 50%
+    &__text
+        width: 351px
+    &__title
+        margin: 0
+        font-size: 17px
+        font-weight: normal
+        color: #1eacc7
+    &__subtitle
+        font-size: 15px
+        font-weight: 300
+        line-height: 1.4
+        color: #202020
+
+.mobile
+    min-height: 900px
+    &__header
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__advantajes
+        +text
+    &__title
+        & h2
+            +title
+    &__text
+        margin-bottom: 32px
+        font-family: 'Roboto'
+        font-size: 17px
+        color: #222222
+    &__wraper
+        display: flex
+        justify-content: space-evenly
+    &__block
+        position: relative
+        max-width: 320px
+        height: 280px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 10px
+    &__img
+        position: absolute
+        width: 100%
+        z-index: -1
+    &__block-text
+        margin-top: 30px
+        margin-bottom: 75px
+        font-family: 'Roboto'
+        font-size: 21px
+        text-align: center
+        text-transform: uppercase
+        color: white
+
+    &__block-item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 26px
+        height: 26px
+        border-radius: 50%
+        background-color: #000000
+
+.car
+    height: 500px
+    background: black
+    &__column
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__advantajes
+        +text
+        background: white
+        color: black
+    &__title
+        +title
+        color: white
+    &__subtitle
+        font-family: 'Roboto'
+        font-size: 17px
+        color: white
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 25px
+    &__item-text
+        width: 297px
+        height: 42px
+        font-family: 'Roboto'
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #222222
+    &__item-img
+        max-width: 100%
+
+.conditions
+    min-height: 1000px
+    margin-top: 350px
+    & span
+        margin-left: 33px
+    &__header
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__advanatges
+        +text
+    &__title
+        +title
+    &__block
+        margin: 30px
+    &__title-blue
+        font-family: 'Roboto'
+        font-size: 19px
+        font-weight: normal
+        color: #1ca8c3
+    &__list-blue
+        margin-top: 10px
+        font-family: 'Roboto'
+        font-size: 17px
+        font-weight: 300
+        list-style-type: none
+        color: #222222
+        & li
+            margin-bottom: 5px
+            &:before
+                content: ''
+                display: inline-block
+                position: relative
+                bottom: 1px
+                margin-right: 12px
+                vertical-align: middle
+                width: 21px
+                height: 20px
+                background: url('../img/icons/icon-check-blue.png') left no-repeat
+
+    &__sublist
+        font-family: 'Roboto'
+        font-size: 15px
+        font-weight: normal
+        color: #1ca8c3
+    &__title-red
+        font-family: 'Roboto'
+        font-size: 19px
+        font-weight: normal
+        color: #ff5656
+    &__list-red
+        margin-top: 10px
+        font-family: 'Roboto'
+        font-size: 17px
+        font-weight: 300
+        color: #222222
+        list-style-type: none
+        & li
+            margin-bottom: 5px
+            &:before
+                content: ''
+                display: inline-block
+                float:
+                // position: relative
+                // bottom: 1px
+                margin-right: 12px
+                vertical-align: middle
+                width: 21px
+                height: 20px
+                background: url('../img/icons/icon-check-red.png') left no-repeat
+    &__block-title
+
+.cities
+    height: 717px
+    background: url('../img/bg_map.jpg') center no-repeat
+    background-size: cover
+    &__column
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__cities
+        +text
+        background: white
+        color: black
+    &__world
+        +title
+        color: white
+    &__text
+        font-family: 'Roboto'
+        font-size: 17px
+        color: white
+    &__look-up
+        margin-top: 480px
+        font-family: 'Roboto'
+        font-size: 15px
+        text-transform: uppercase
+        color: #1fbad6
+
+.footer
+
+    &__wraper
+        min-height: 160px
+        display: flex
+        justify-content: space-around
+    &__icons
+        display: flex
+        margin-top: 60px
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 32px
+        height: 32px
+        margin-right: 9px
+        border-radius: 50%
+        background-color: #070716
+    &__item-img
+        display: flex
+        justify-content: center
+        align-items: center
+    &__menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-left: 120px
+        // width: 450px
+
+    &__line
+        margin-top: 14px
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+    &__list1
+        display: flex
+        justify-content: center
+        margin-top: 32px
+        & li
+            list-style-type: none
+            margin-right: 46px
+        & a
+            font-family: 'Roboto'
+            font-size: 15px
+            font-weight: 300
+            text-decoration: none
+            color: #070716
+    &__list2
+        display: flex
+        padding: 0px 0px 0px 0px
+        & li
+            list-style-type: none
+            margin-right: 21px
+        & a
+            font-family: Roboto
+            font-size: 11px
+            font-weight: 300
+            text-decoration: none
+            text-transform: uppercase
+            color: #999999
+    &__language
+        font-family: 'Roboto'
+        font-size: 11px
+        text-align: center
+        color: #1fbad6
+        text-transform: uppercase
+    &__store
+        margin-top: 60px
+        & img

@@ -1,0 +1,100 @@
+.resume {
+    &__abovetitle {
+        text-align: center;
+       @include before_circle;
+       &:before {
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%); 
+       }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__line {
+        margin: 25px auto;
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__block {
+        margin-left: 65px;
+    }
+    &__column {
+        margin-left: 50px;
+    }
+    &__item{
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 41px;
+            position: absolute;
+            top: 67px;
+            background-color: #000;
+        }
+        &-head {
+            padding: 45px 0px 0px 100px;
+        }
+    }
+    &__item-icon {
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        @include before_circle;
+        img {
+            position: absolute;
+            left: 17px;
+            top: 14px;
+        }
+    }
+    &__item-text {
+        margin-top: 12px;
+        padding-left: 43px;
+        max-width: 425px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    &__item-info {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    &__item-location {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    &__education {
+        position: relative;
+        margin-top: 60px;
+        padding-left: 35px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: $main-color;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            &:after {
+                content: '';
+                width: 1px;
+                height: calc(100% + 16px);
+                position: absolute;
+                top: -15px;
+                left: 0;
+                background-color: #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,322 @@
+@media (max-width: 1200px) {
+    .sidepanel {
+        display: none;
+    }
+    .tabcontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 850px;
+    }
+    .tabheader__items {
+        display: flex;
+    }
+    .tabheader__item {
+        margin-right: 20px;
+    }
+    .tabcontent__descr {
+        position: absolute;
+        top: 300px;
+        right: 0px;
+        width: 350px;
+        height: 359px;
+        background: rgba(251,254,93,.8);
+        padding: 50px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 36px;
+        color: rgba(0,0,0,.7);
+        font-weight: bold;
+    }
+    .preview__life {
+        padding-left: 50px;
+    }
+    .slider {
+        display: flex;
+        flex-direction:  column;
+        align-items: center;
+        justify-content: center;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .offer .bgc_y {
+        width: 850px;
+    }
+    .offer__advantages {
+        display: flex;
+        justify-content: space-around;
+        width: 700px;
+    }
+    .offer__advantages-text {
+        margin: 0;
+        width: 50%;
+    }
+    .offer__descr {
+        margin-bottom: 50px;
+    }
+    .con_footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .promotion__text {
+        padding-left: 20px;
+    }
+    .footer .container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__left-block {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+    }
+    .header__links {
+        margin-top: 20px;
+    }
+    .tabcontainer {
+        width: 650px;
+    }
+    .tabcontent {
+        width: 650px;
+    }
+    
+    .tabcontent__descr {
+        width: 650px;
+        height: 250px;
+    }
+    .preview__life {
+       display: none;
+    }
+    .divider {
+        display: none;
+    }
+    .order__form img {
+        display: none;
+    }
+    .calculating__choose_medium {
+        justify-content: space-around;
+    }
+    .calculating__choose_big {
+        flex-wrap: wrap;
+        width: 500px;
+        
+    }
+    .calculating__choose_big .calculating__choose-item {
+        margin-top: 30px;
+    }
+    .menu .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu__item {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .order__form {
+        flex-direction: column;
+    }
+    .order__input {
+        margin-bottom: 30px;
+    }
+    .promotion .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 27px;
+    }
+    .promotion__timer .title {
+        font-size: 26px;
+    }
+    .promotion__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promotion__timer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .promotion__timer .timer {
+        padding-left: 0px;
+    }
+    .promotion__timer .timer__block {
+        margin-right: 15px;
+    }
+    .offer .bgc_y {
+        width: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__left-block {
+        align-items: center;
+    }
+    .btn_white {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .tabcontainer {
+        margin-top: 40px;
+        width: 90%;
+    }
+    .tabcontent {
+        width: 100%;
+    }
+    .tabcontent__descr {
+        top: 200px;
+        width: 100%;
+        height: 200px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .tabheader__items {
+        flex-direction: column;
+
+    }
+    .calculating__choose_medium {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+    .calculating__choose-item {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .offer .container {
+        padding-top: 180px;
+        width: 500px;
+    }
+    .offer__advantages {
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+    .offer .bgc_y {
+        width: 80%;
+    }
+    .offer__text {
+        width: 80%;
+    }
+    .offer__slider {
+        width: 80%;
+    }
+    .container {
+        max-width: 80%;
+    }
+    .calculating__choose_big {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .calculating #gender:after {
+        display: none;
+    }
+}
+@media (max-width: 630px) {
+    .offer__slider {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__link {
+        font-size: 17px;
+    }
+    .btn {
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+    }
+    .tabcontent__descr {
+        padding: 20px;
+        top: 130px;
+        font-size: 12px;
+    }
+    .tabheader__item_active {
+        font-size: 20px;
+    }
+    .offer__slider {
+        width: 90%;
+    }
+    .offer__advantages {
+        width: 80%;
+    }
+    .offer__advantages-text {
+        width: 80%;
+    }
+    .offer .container {
+        padding-top: 70px;
+    }
+    .calculating__choose {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculating .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .calculating__total {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .calculating__result {
+        margin-top: 30px;
+    }
+    .calculating__result span{
+        font-size: 35px;
+    }
+    .calculating__divider {
+        display: none;
+    }
+    .calculating__subtitle:first-child {
+        margin-top: 30px;
+    }
+    .calculating__choose_medium {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .promotion__text {
+        width: 80%;
+    }
+    .promotion__timer {
+        width: 80%;
+    }
+    .promotion__timer .title {
+        font-size: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .promotion__timer .timer__block span {
+        font-size: 36px;
+    }
+    .promotion__timer .timer__block {
+        margin-top: 20px;
+        width: 70px;
+
+    }
+    .modal__dialog {
+        max-width: 340px;
+        margin: 40px auto;
+    }
+    .footer .subtitle {
+        font-size: 15px;
+    }
+}   

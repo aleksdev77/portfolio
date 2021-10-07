@@ -1,0 +1,30 @@
+.fadeOne {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeTwo {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+.opacity {
+    opacity: 100;
+}
